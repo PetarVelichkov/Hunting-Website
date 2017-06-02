@@ -1,6 +1,6 @@
 const controllers = require('../controllers');
-let homeRoute = require('./home');
-let usersRoute = require('./users');
+let homeRoute = require('./home-route');
+let usersRoute = require('./users-routes');
 
 module.exports = (app) => {
     app.use('/', homeRoute);
