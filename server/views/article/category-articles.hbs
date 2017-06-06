@@ -1,20 +1,14 @@
-
-<div class="row">
+<div class="articles row col-lg-9 center-block">
     {{#each articles}}
-        <div class="col-md-2">
-            <article>
-                <header>
-                    <h2>{{this.title}}</h2>
-                </header>
-                <!--<main>-->
-                    <!--<img src="/{{this.image1}}" alt="Photo">-->
-                <!--</main>-->
-                <footer>
-                    <div>
-                        <a class="btn btn-default" href="/article/details/{{this.id}}">Read more</a>
-                    </div>
-                </footer>
-            </article>
+        <div class="col-md-3  article">
+            <h2 class="text-center">{{this.title}}</h2>
+
+            <div>
+            <img src="/{{this.image1}}" alt="Photo" class="img-responsive img-thumbnail">
+            </div>
+            <div>
+                <a class="btn btn-warning center-block text-center" href="/article/details/{{this.id}}">Прочети</a>
+            </div>
         </div>
     {{/each}}
 </div>
