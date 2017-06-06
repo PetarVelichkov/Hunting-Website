@@ -1,0 +1,63 @@
+<div class="col-md-9 row">
+        <div class="well">
+            <form class="form-horizontal" method="POST" action="/article/create" enctype="multipart/form-data">
+                <fieldset>
+                    <legend>Нова статия</legend>
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="articleTitle">Заглавие</label>
+                        <div class="col-sm-4 ">
+                            <input type="text" class="form-control" id="articleTitle" placeholder="Заглавие" name="title" required autofocus>
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="articleContent1">Съдържание 1</label>
+                        <div class="col-sm-6">
+                            <textarea class="form-control" id="articleContent1" rows="5" placeholder="Съдържание" name="content1" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="articleContent2">Съдържание 2</label>
+                        <div class="col-sm-6">
+                            <textarea class="form-control" id="articleContent2" rows="5" placeholder="Съдържание" name="content2" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="articleConten3t">Съдържание 3</label>
+                        <div class="col-sm-6">
+                            <textarea class="form-control" id="articleContent3" rows="5" placeholder="Съдържание" name="content3" required></textarea>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="articleImages">Снимки</label>
+                        <div class="col-sm-6">
+                            <input type="file" multiple name="images" value="Снимка 3" id="articleImages">
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <label class="col-sm-4 control-label" for="category">Категория</label>
+                        <div class="col-sm-6">
+                            <select id="category" name="category">
+                                {{#each categories}}
+                                    <option>{{this.title}}</option>
+                                {{/each}}
+                            </select>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-sm-4 col-sm-offset-4">
+
+                            <a href="/" class="btn btn-default">Назад</a>
+
+                            <button type="submit" class="btn btn-primary">Създай</button>
+                        </div>
+                    </div>
+                </fieldset>
+            </form>
+        </div>
+</div>

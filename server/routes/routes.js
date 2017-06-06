@@ -1,10 +1,13 @@
-const controllers = require('../controllers');
 let homeRoute = require('./home-route');
-let usersRoute = require('./users-routes');
+let articleRoute = require('./article-route');
+let usersRoute = require('./users-route');
+let categoryRoute = require('./category-route');
 
 module.exports = (app) => {
     app.use('/', homeRoute);
+    app.use('/', articleRoute);
     app.use('/', usersRoute);
+    app.use('/', categoryRoute);
 
     app.all('*', (req, res) => {
         res.status(404);

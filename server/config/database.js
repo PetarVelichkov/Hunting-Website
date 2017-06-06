@@ -15,7 +15,9 @@ module.exports = (config) => {
         console.log('MongoDB ready!');
     });
 
-    db.on('error', err => console.log('Database error: ' + err))
+    db.on('error', err => console.log('Database error: ' + err));
 
-    // require('../models/User').seedAdminUser();//TODO add user model
+    require('../models/User').seedAdminUser();
+    require('../models/Article');
+    require('../models/Category');
 };
