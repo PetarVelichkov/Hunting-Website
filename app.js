@@ -3,7 +3,9 @@ const favicon = require('serve-favicon');
 // const logger = require('morgan');
 let hbs = require('hbs');
 
+
 const app = express();
+
 
 let env = process.env.NODE_ENV || 'development';
 let config = require('./server/config/config')[env];
@@ -13,6 +15,7 @@ require('./server/config/express')(config, app);
 require('./server/routes/routes')(app);
 require('./server/config/passport')();
 require('./server/config/handlebars')(hbs);
+
 
 // catch 404 and forward to error handler
 app.use(function (req, res, next) {

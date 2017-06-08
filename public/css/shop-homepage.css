@@ -90,7 +90,7 @@ body {
 }
 
 .articles h2 {
-    height: 8vh;
+    height: 9vh;
 }
 
 .articles img {
@@ -115,6 +115,12 @@ thead th{
 
 .sidebar {
     margin-top: 80px;
+}
+
+#lightgallery a img {
+    max-height: 20vh;
+    min-width: 100%;
+    margin-bottom: 10px;
 }
 
 footer {

@@ -20,4 +20,6 @@ module.exports = (config) => {
     require('../models/User').seedAdminUser();
     require('../models/Article');
     require('../models/Category');
+    require('../models/Gallery');
+    require('../models/Methods');
 };

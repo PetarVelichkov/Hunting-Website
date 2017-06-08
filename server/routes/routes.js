@@ -3,6 +3,8 @@ let articleRoute = require('./article-route');
 let usersRoute = require('./users-route');
 let categoryRoute = require('./category-route');
 let calendarRoute = require('./calendar-routes');
+let galleryRoute = require('./gallery-route');
+let methodsRoute = require('./methods-route');
 
 module.exports = (app) => {
     app.use('/', homeRoute);
@@ -10,6 +12,8 @@ module.exports = (app) => {
     app.use('/', usersRoute);
     app.use('/', categoryRoute);
     app.use('/', calendarRoute);
+    app.use('/', galleryRoute);
+    app.use('/', methodsRoute);
 
     app.all('*', (req, res) => {
         res.status(404);

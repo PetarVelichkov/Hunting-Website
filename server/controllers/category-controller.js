@@ -1,12 +1,6 @@
 const Category = require('mongoose').model('Category');
 const Article = require('mongoose').model('Article');
 require('paginate-for-mongoose');
-const Handlebars = require('handlebars');
-
-Handlebars.registerHelper("inc", function(value, options)
-{
-    return parseInt(value) + 1;
-});
 
 module.exports = {
     createCategoryView: (req, res) => {
