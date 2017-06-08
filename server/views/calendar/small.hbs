@@ -1,0 +1,47 @@
+<div class="col-md-3 panel panel-footer">
+    <div class="panel-heading">
+        <p class="panel-title text-center">Видове дивеч</p>
+    </div>
+    <div class="panel-body">
+        <ul class="nav">
+            {{#each categories}}
+                <li>
+                    <a href="/calendar/{{inc @index}}" class="list-group-item text-center">{{title}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+<div class="col-md-8">
+
+    <div class="row center-block">
+        <div class="table-responsive table-bordered">
+            <table class="table">
+                <thead><tr><th>Срок за ловуване</th></tr></thead>
+                <tbody>
+                <tr>
+                    <th>Див заек</th>
+                    <td>от 1 октомври до 31 декември</td>
+                </tr>
+                <!-- new row -->
+                <tr>
+                    <th>Катерица</th>
+                    <td>от 1 ноември до 31 декември</td>
+                </tr>
+                <!-- new row -->
+                <tr>
+                    <th>Нутрия</th>
+                    <td>от 1 ноември до 28 февруари</td>
+                </tr>
+                <!-- new row -->
+                <tr>
+                    <th>Язовец</th>
+                    <td>от 1 август до 28 февруари</td>
+                </tr>
+
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

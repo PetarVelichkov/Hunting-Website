@@ -1,3 +1,18 @@
+<div class="col-md-3 panel panel-footer">
+    <div class="panel-heading">
+        <p class="panel-title text-center">Видове дивеч</p>
+    </div>
+    <div class="panel-body">
+        <ul class="nav">
+            {{#each categories}}
+                <li>
+                    <a href="/category/articles/{{this.id}}?page=1"
+                       class="list-group-item text-center">{{title}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
 <div class="col-md-6">
     <div class=" body-content span=6 offset=2">
         <div class="well">

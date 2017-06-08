@@ -1,0 +1,69 @@
+<div class="col-md-3 panel panel-footer">
+    <div class="panel-heading">
+        <p class="panel-title text-center">Видове дивеч</p>
+    </div>
+    <div class="panel-body">
+        <ul class="nav">
+            {{#each categories}}
+                <li>
+                    <a href="/calendar/{{inc @index}}" class="list-group-item text-center">{{title}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+
+<div class="col-md-8">
+
+    <div class="row center-block">
+        <div class="table-responsive table-bordered">
+            <table class="table">
+                <thead><tr><th>Срок за ловуване</th></tr></thead>
+                <tbody>
+                <tr>
+                    <th>Мечка</th>
+                </tr>
+                <tr>
+                    <td>Стръвници</td>
+                    <td>целогодишно</td>
+                </tr>
+                <!-- new row -->
+                <tr>
+                    <th>Вълк</th>
+                    <td>целогодишно</td>
+                </tr>
+                <!-- new row -->
+                <tr>
+                    <th>Чакал</th>
+                    <td>целогодишно</td>
+                </tr>
+                <!-- new row -->
+                <tr>
+                    <th>Групов лов на чакал извън горския фонд</th>
+                    <td>от 1 януари до последния ден на февруари</td>
+                </tr>
+                <!-- new row -->
+                <tr>
+                    <th>Лисица</th>
+                    <td>целогодишно</td>
+                </tr>
+                <!-- new row -->
+                <tr>
+                    <th>Енотовидно куче</th>
+                    <td>целогодишно</td>
+                </tr>
+                <!-- new row -->
+                <tr>
+                    <th>Бялка</th>
+                    <td>целогодишно</td>
+                </tr>
+                <!-- new row -->
+                <tr>
+                    <th>Черен пор</th>
+                    <td>целогодишно</td>
+                </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+</div>

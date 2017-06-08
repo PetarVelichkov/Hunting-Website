@@ -1,14 +1,38 @@
-<div class="articles row col-lg-9 center-block">
+<div class="col-md-3 panel panel-footer">
+    <div class="panel-heading">
+        <p class="panel-title text-center">Видове дивеч</p>
+    </div>
+    <div class="panel-body">
+        <ul class="nav">
+            {{#each categories}}
+                <li>
+                    <a href="/category/articles/{{this.id}}?page=1"
+                       class="list-group-item text-center">{{title}}</a>
+                </li>
+            {{/each}}
+        </ul>
+    </div>
+</div>
+<div class="articles row col-md-9 center-block">
     {{#each articles}}
-        <div class="col-md-3  article">
+        <div class=" col-sm-3 article">
             <h2 class="text-center">{{this.title}}</h2>
 
             <div>
-            <img src="/{{this.image1}}" alt="Photo" class="img-responsive img-thumbnail">
+                <img src="/{{this.image1}}" alt="Photo" class="img-responsive img-thumbnail">
             </div>
             <div>
                 <a class="btn btn-warning center-block text-center" href="/article/details/{{this.id}}">Прочети</a>
             </div>
         </div>
     {{/each}}
+    <div class="col-sm-12">
+        <ul class="pagination">
+            {{#if pages}}
+                {{#each pages}}
+                    <li ><a{{#if active}} class="active"{{/if}} href="?page={{inc @index}}">{{inc @index}}</a></li>
+                {{/each}}
+            {{/if}}
+        </ul>
+    </div>
 </div>

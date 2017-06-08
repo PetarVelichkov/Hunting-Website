@@ -6,7 +6,6 @@ const passport = require('passport');
 const multer = require('multer');
 const Category = require('mongoose').model('Category');
 
-
 module.exports = (config, app) => {
     "use strict";
     app.set('view engine', 'hbs');
@@ -31,11 +30,13 @@ module.exports = (config, app) => {
         next()
     });
 
-   Category.find({}).then(categories => {
-       app.locals.categories = categories
-   });
+    Category.find({}).then(categories => {
+        app.locals.categories = categories
+    });
+
+
     // uncomment after placing your favicon in /public
-    //app.use(favicon(path.join(__dirname, 'public', 'favicon.ico')));
+    app.use(express.static(config.rootPath + 'public/images/favicon.ico'));
 
     app.use(express.static(config.rootPath + 'public'));
 };

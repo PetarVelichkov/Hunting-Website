@@ -1,5 +1,12 @@
 const Category = require('mongoose').model('Category');
 const Article = require('mongoose').model('Article');
+require('paginate-for-mongoose');
+const Handlebars = require('handlebars');
+
+Handlebars.registerHelper("inc", function(value, options)
+{
+    return parseInt(value) + 1;
+});
 
 module.exports = {
     createCategoryView: (req, res) => {
@@ -38,8 +45,27 @@ module.exports = {
         let id = req.params.id;
 
         Category.findById(id).then(category => {
-            Article.find({category: category.title}).then(articles => {
-                res.render('article/category-articles', {articles: articles})
+            // Article.find({category: category.title}).then(articles => {
+            //     res.render('article/category-articles', {articles: articles})
+            // });
+
+            let options = {
+                perPage: 6,
+                delta: 4,
+                page: req.query.page
+            };
+
+            let query = Article.find({category: category.title});
+            query.paginate(options, (err, response) => {
+                let num = response.pages.length;
+                if(num === 1) {
+                    num = false
+                } else {
+                    num = response.pages
+                }
+
+                res.render('article/category-articles', {articles: response.results, pages: num})
+
             })
         })
     }

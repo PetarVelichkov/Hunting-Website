@@ -6,13 +6,15 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="">
-    <meta name="author" content="">
+    <meta name="description" content="My simple website">
+    <meta name="author" content="Peter Velichkov">
 
-    <title>Shop Homepage - Start Bootstrap Template</title>
-
+    <title>Hunting Website</title>
+    <link rel="icon" href="/images/favicon.ico" type="image/x-icon">
     <!-- Bootstrap Core CSS -->
     <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
     <!-- Custom CSS -->
     <link href="/css/shop-homepage.css" rel="stylesheet">
@@ -49,7 +51,7 @@
                     <a href="/">Начало</a>
                 </li>
                 <li>
-                    <a href="#">Ловен календар</a>
+                    <a href="/calendar/1">Ловен календар</a>
                 </li>
                 <li>
                     <a href="#">Методи за лов</a>
@@ -60,25 +62,19 @@
                 <li>
                     <a href="#">Контакти</a>
                 </li>
-            </ul>
-            {{#if currentUser}}
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a>Здравей({{currentUser.username}})</a></li>
-                        <li><a href="/article/create">Нова Статия</a></li>
-                        <li><a href="/category/create">Нова Категория</a></li>
-                        <li><a href="/user/logout">Излез</a></li>
-                    </ul>
-                </div>
-            {{/if}}
-            {{#unless currentUser}}
-                <div class="navbar-collapse collapse">
-                    <ul class="nav navbar-nav navbar-right">
-                        <li><a href="/user/login">Влез</a></li>
-                    </ul>
-                </div>
-            {{/unless}}
+                <li><a>|</a></li>
+                {{#if currentUser}}
+                    <li><a>Здравей({{currentUser.username}})</a></li>
+                    <li><a href="/article/create">Нова Статия</a></li>
+                    <li><a href="/category/create">Нова Категория</a></li>
+                    <li><a href="/user/logout">Излез</a></li>
+                {{/if}}
+                {{#unless currentUser}}
 
+                    <li><a href="/user/login">Влез</a></li>
+
+                {{/unless}}
+            </ul>
         </div>
         <!-- /.navbar-collapse -->
     </div>
@@ -86,29 +82,12 @@
 </nav>
 
 <!-- Page Content -->
-<div class="container sidebar">
-    <div class="col-md-3 panel panel-footer">
-        <div class="panel-heading">
-            <p class="panel-title text-center">Категории</p>
-        </div>
-        <div class="panel-body">
-            <ul class="nav">
-                {{#each categories}}
-                    <li>
-                        <a href="/category/articles/{{this.id}}" class="list-group-item text-center">{{title}}</a>
-                    </li>
-                {{/each}}
-            </ul>
-        </div>
-    </div>
-
+<div class="container body-content">
     {{#if error }}
         <h2>{{error}}</h2>
     {{/if}}
 
     {{{body}}}
-
-
     <!-- /.container -->
 </div>
 <div class="container">
