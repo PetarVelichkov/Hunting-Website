@@ -5,6 +5,7 @@ let categoryController = require('./category-controller');
 let calendarController = require('./calendar-controller');
 let galleryController = require('./gallery-controller');
 let methodsController = require('./methods-controller');
+let contactsController = require('./contacts-controller');
 
 let controllers = {
     home: homeController,
@@ -13,7 +14,8 @@ let controllers = {
     category: categoryController,
     calendar: calendarController,
     gallery: galleryController,
-    methods: methodsController
+    methods: methodsController,
+    contacts: contactsController
 };
 
 module.exports = controllers;

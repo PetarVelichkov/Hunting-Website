@@ -5,6 +5,7 @@ let categoryRoute = require('./category-route');
 let calendarRoute = require('./calendar-routes');
 let galleryRoute = require('./gallery-route');
 let methodsRoute = require('./methods-route');
+let contactsRoute = require('./contact-route');
 
 module.exports = (app) => {
     app.use('/', homeRoute);
@@ -14,6 +15,7 @@ module.exports = (app) => {
     app.use('/', calendarRoute);
     app.use('/', galleryRoute);
     app.use('/', methodsRoute);
+    app.use('/', contactsRoute);
 
     app.all('*', (req, res) => {
         res.status(404);
