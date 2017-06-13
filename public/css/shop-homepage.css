@@ -7,7 +7,7 @@
 body {
     padding-top: 70px; /* Required padding for .navbar-fixed-top. Remove if using .navbar-static-top. Change if height of navigation changes. */
     font-family: "Helvetica Neue", Helvetica, sans-serif;
-    font-size: 1.7em;
+    font-size: 2.5vh;
 }
 
 .body-content {
@@ -84,8 +84,8 @@ body {
     font-size: 1em;
 }
 
-.articles h2 {
-   height: 10vh;
+.articles h3 {
+   height: 8vh;
 }
 
 .thmb img{
