@@ -7,7 +7,7 @@ let hbs = require('hbs');
 const app = express();
 
 
-let env = process.env.NODE_ENV || 'development';
+let env = process.env.NODE_IMPORTED || 'development';
 let config = require('./server/config/config')[env];
 
 require('./server/config/database')(config);
