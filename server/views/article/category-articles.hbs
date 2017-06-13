@@ -31,7 +31,7 @@
         <ul class="pagination">
             {{#if pages}}
                 {{#each pages}}
-                    <li ><a{{#if active}} class="active"{{/if}} href="?page={{inc @index}}">{{inc @index}}</a></li>
+                    <li><a href="?page={{inc @index}}">{{inc @index}}</a></li>
                 {{/each}}
             {{/if}}
         </ul>
