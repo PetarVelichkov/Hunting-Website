@@ -10,6 +10,6 @@ module.exports = {
     production: {
         rootPath: rootPath,
         db: process.env.MONGODB_ADDON_URI,
-        port: process.env.MONGODB_ADDON_PORT
+        port: process.env.port
     }
 };
