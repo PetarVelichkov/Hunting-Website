@@ -17,7 +17,8 @@ module.exports = (config) => {
 
     db.on('error', err => console.log('Database error: ' + err));
 
-    require('../models/User').seedAdminUser();
+    // require('../models/User').seedAdminUser();
+    require('../models/User');
     require('../models/Article');
     require('../models/Category');
     require('../models/Gallery');
