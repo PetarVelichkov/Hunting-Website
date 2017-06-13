@@ -2,9 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5cfee191-ffac-46da-b704-c8a38e4c19b6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/css/shop-homepage.css" afterPath="$PROJECT_DIR$/public/css/shop-homepage.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/home/index.hbs" afterPath="$PROJECT_DIR$/server/views/home/index.hbs" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/layout.hbs" afterPath="$PROJECT_DIR$/server/views/layout.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/article/category-articles.hbs" afterPath="$PROJECT_DIR$/server/views/article/category-articles.hbs" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/server/views/contacts/contacts.hbs" afterPath="$PROJECT_DIR$/server/views/contacts/contacts.hbs" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -29,11 +29,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="shop-homepage.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="shop-homepage.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/css/shop-homepage.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+            <state relative-caret-position="336">
+              <caret line="119" column="19" lean-forward="true" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
               <folding />
             </state>
           </provider>
@@ -52,8 +52,28 @@
       <file leaf-file-name="category-articles.hbs" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/server/views/article/category-articles.hbs">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="520">
-              <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
+            <state relative-caret-position="432">
+              <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="contacts.hbs" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/server/views/contacts/contacts.hbs">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="256">
+              <caret line="15" column="171" lean-forward="false" selection-start-line="15" selection-start-column="171" selection-end-line="15" selection-end-column="171" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="bootstrap.css" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="288">
+              <caret line="1269" column="3" lean-forward="false" selection-start-line="1269" selection-start-column="1" selection-end-line="1269" selection-end-column="3" />
               <folding />
             </state>
           </provider>
@@ -71,8 +91,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>pat</find>
-      <find>inde</find>
       <find>|</find>
       <find>siz</find>
       <find>font</find>
@@ -80,7 +98,6 @@
       <find>slide</find>
       <find>carousel</find>
       <find>errorMsg</find>
-      <find>tit</find>
       <find>session</find>
       <find>emai</find>
       <find>categories</find>
@@ -101,6 +118,9 @@
       <find>mai</find>
       <find>node</find>
       <find>row</find>
+      <find>tit</find>
+      <find>media</find>
+      <find>h2</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -147,7 +167,6 @@
         <option value="$PROJECT_DIR$/server/controllers/index.js" />
         <option value="$PROJECT_DIR$/server/routes/contact-route.js" />
         <option value="$PROJECT_DIR$/public/css/contacts.css" />
-        <option value="$PROJECT_DIR$/server/views/contacts/contacts.hbs" />
         <option value="$PROJECT_DIR$/app.js" />
         <option value="$PROJECT_DIR$/package.json" />
         <option value="$PROJECT_DIR$/server/views/gallery/gallery.hbs" />
@@ -155,11 +174,12 @@
         <option value="$PROJECT_DIR$/server/config/database.js" />
         <option value="$PROJECT_DIR$/Procfile.txt" />
         <option value="$PROJECT_DIR$/server/views/methods/methods.hbs" />
-        <option value="$PROJECT_DIR$/server/views/article/category-articles.hbs" />
         <option value="$PROJECT_DIR$/server/config/handlebars.js" />
         <option value="$PROJECT_DIR$/server/views/layout.hbs" />
         <option value="$PROJECT_DIR$/server/views/home/index.hbs" />
         <option value="$PROJECT_DIR$/public/css/shop-homepage.css" />
+        <option value="$PROJECT_DIR$/server/views/article/category-articles.hbs" />
+        <option value="$PROJECT_DIR$/server/views/contacts/contacts.hbs" />
       </list>
     </option>
   </component>
@@ -297,6 +317,28 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="methods" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hunting-Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Hunting-Website" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="server" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="contacts" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -553,12 +595,12 @@
       <workItem from="1497005561060" duration="1292000" />
       <workItem from="1497346972039" duration="4006000" />
       <workItem from="1497362118558" duration="7743000" />
-      <workItem from="1497374425785" duration="4152000" />
+      <workItem from="1497374425785" duration="5198000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="149194000" />
+    <option name="totallyTimeSpent" value="150240000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -605,7 +647,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/node_modules/express-photo-gallery/index.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/express-photo-gallery/lib/get_s3_payload.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/express-photo-gallery/lib/get_payload.js" />
     <entry file="file://$PROJECT_DIR$/node_modules/lightgallery/dist/js/lightgallery.js" />
@@ -795,20 +836,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/contacts.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="576">
-          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/server/views/contacts/contacts.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="472">
-          <caret line="23" column="96" lean-forward="false" selection-start-line="23" selection-start-column="96" selection-end-line="23" selection-end-column="96" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/server/config/express.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="426">
@@ -892,14 +919,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/server/views/article/category-articles.hbs">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="520">
-          <caret line="33" column="23" lean-forward="false" selection-start-line="33" selection-start-column="23" selection-end-line="33" selection-end-column="23" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/public/images/home/1.JPG">
       <provider selected="true" editor-type-id="images">
         <state />
@@ -918,6 +937,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/shop-homepage.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="336">
+          <caret line="119" column="19" lean-forward="true" selection-start-line="119" selection-start-column="19" selection-end-line="119" selection-end-column="19" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/server/views/home/index.hbs">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="64">
@@ -926,10 +953,34 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/css/shop-homepage.css">
+    <entry file="file://$PROJECT_DIR$/public/css/contacts.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+        <state relative-caret-position="360">
+          <caret line="14" column="37" lean-forward="false" selection-start-line="14" selection-start-column="37" selection-end-line="14" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/css/bootstrap.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="288">
+          <caret line="1269" column="3" lean-forward="false" selection-start-line="1269" selection-start-column="1" selection-end-line="1269" selection-end-column="3" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views/article/category-articles.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="18" column="34" lean-forward="false" selection-start-line="18" selection-start-column="34" selection-end-line="18" selection-end-column="34" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/server/views/contacts/contacts.hbs">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="256">
+          <caret line="15" column="171" lean-forward="false" selection-start-line="15" selection-start-column="171" selection-end-line="15" selection-end-column="171" />
           <folding />
         </state>
       </provider>
