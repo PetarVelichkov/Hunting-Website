@@ -51,7 +51,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span>
             </button>
-            <span id="header" href="#">Ловът в България</span>
+            <span><a id="header" href="/">Ловът в България</a></span>
         </div>
         <!-- Collect the nav links, forms, and other content for toggling -->
         <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -73,13 +73,13 @@
                 </li>
                 <!--TODO admin panel-->
                 <!--<li><a>|</a></li>-->
-                <!--{{#if currentUser}}-->
-                    <!--<li><a>Здравей({{currentUser.username}})</a></li>-->
-                    <!--<li><a href="/article/create">Нова Статия</a></li>-->
-                    <!--<li><a href="/category/create">Нова Категория</a></li>-->
-                    <!--<li><a href="/user/logout">Излез</a></li>-->
-                <!--{{/if}}-->
-                <!--{{#unless currentUser}}-->
+                {{#if currentUser}}
+                    <li><a>Здравей({{currentUser.username}})</a></li>
+                    <li><a href="/article/create">Нова Статия</a></li>
+                    <li><a href="/category/create">Нова Категория</a></li>
+                    <li><a href="/user/logout">Излез</a></li>
+                {{/if}}
+                {{#unless currentUser}}
 
                     <!--<li><a href="/user/login">Влез</a></li>-->
 

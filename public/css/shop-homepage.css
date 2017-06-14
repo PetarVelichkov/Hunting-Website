@@ -21,6 +21,11 @@ body {
     font-size: 1.8em;
     color: white;
     margin-right: 20px;
+    text-decoration: none;
+}
+
+#header:hover {
+    color: #ccc;
 }
 
 .carousel-inner {
